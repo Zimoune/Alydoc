@@ -16,8 +16,6 @@ Pour gagner ces fameux pigz, il y a plusieurs solutions.
 ******************
 Consulter ses pigz
 ******************
-Pour consulter votre solde vous devez executer la commande suivante.
-``/money``
+Pour consulter votre solde vous devez executer la commande suivante.|``/money``
 
-Vous pouvez aussi voir le classement des plus riches.
-``/baltop``
+Vous pouvez aussi voir le classement des plus riches.|``/baltop``
