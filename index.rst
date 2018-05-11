@@ -8,13 +8,11 @@ Bienvenue sur le guide d'Alykraft
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Sommaire:
 
-
-
-Sommaire
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   win_money
+.. Indices and tables
+   ==================
+   * :ref:`genindex`
+   * :ref:`modindex`
+   * :ref:`search`
