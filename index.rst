@@ -11,6 +11,7 @@ Bienvenue sur le guide d'Alykraft
    :caption: Sommaire:
 
    win_money
+   town
 .. Indices and tables
    ==================
    * :ref:`genindex`
