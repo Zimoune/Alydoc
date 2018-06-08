@@ -22,6 +22,3 @@ Les messages privés
 *******************
 Vous pouvez bien évidemment envoyer des messages privés aux autres joueurs.
 Pour cela, vous devez executer la commande suivante : ``/msg <pseudo du destinataire> <votre message>``
-
-.. note:: You will need Triage permission on the project in order to do this.
-          You can ask one of the members of the :doc:`team` to give you access.
