@@ -80,10 +80,16 @@
             
               <p class="caption"><span class="caption-text">Sommaire:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="chat.html">Le chat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="move.html">Déplacements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="win_money.html">La monnaie</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Les nations</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#comment-creer-une-ville">Comment créer une ville ?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#comment-en-gagner">Comment en gagner ?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#les-proprietes-d-une-nation">Les propriétés d’une nation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creer-une-nation">Créer une nation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#liste-des-commandes-nations">Liste des commandes Nations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nation">/Nation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -152,17 +158,174 @@
             
   <div class="section" id="les-nations">
 <h1>Les nations<a class="headerlink" href="#les-nations" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Les villes permettent de protéger vos constructions et aussi vos coffres.</p>
-<div class="section" id="comment-creer-une-ville">
-<h2>Comment créer une ville ?<a class="headerlink" href="#comment-creer-une-ville" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Il vous faut 50000 pigzs.
-Elle permet principalement de faire du commerce et d’acheter des terrains dans une ville.</p>
+<p>Les villes permettent de protéger vos constructions et aussi vos coffres.
+Fonder ou rejoindre une ville, c’est essentiel pour votre développement.
+Au plus votre communauté est grande, au plus vos richesses s’accumulent et vos constructions
+évolues.</p>
+<div class="section" id="les-proprietes-d-une-nation">
+<h2>Les propriétés d’une nation<a class="headerlink" href="#les-proprietes-d-une-nation" title="Lien permanent vers ce titre">¶</a></h2>
+<p><strong>Name:</strong> Le nom de la nation qui peut être changé. Il doit être alphanumérique. (Par défaut entre 1 et 16 caractères)</p>
+<p><strong>President:</strong> Le joueur unique qui possède la nation.</p>
+<p><strong>Ministers:</strong> Ils sont des joueurs ayant les mêmes droits que le président. Ils ne peuvent pas ajouter / supprimer d’autres ministres ou changer le président. Nous appelons le personnel de la nation le président + ses ministres.</p>
+<p><strong>Citizens:</strong> Ils sont des joueurs qui sont dans la nation. Le président et les ministres sont aussi des citoyens.</p>
+<p><strong>Region:</strong> Le territoire de la nation. Il est considéré comme une surface horizontale qui est étendue verticalement. Cela signifie que vous ne pouvez pas définir une région entre les couches 20 et 130 par exemple (vous n’avez pas à vous préoccuper de la hauteur des points que vous allez sélectionner).</p>
+<p><strong>Money:</strong> Le montant d’argent que la nation a.</p>
+<p><strong>Taxes:</strong> Le montant d’argent que les citoyens (à l’exception des membres du personnel) doivent payer à la nation chaque jour. Si le joueur ne peut pas payer les taxes, il sera expulsé automatiquement de la nation.</p>
+<p><strong>Upkeep:</strong> La somme d’argent que la nation doit payer chaque jour pour ne pas tomber en ruines.</p>
+<p><strong>Zones:</strong> La liste de toutes les zones de la nation.</p>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
-<div class="section" id="comment-en-gagner">
-<h2>Comment en gagner ?<a class="headerlink" href="#comment-en-gagner" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Pour gagner ces fameux pigz, il y a plusieurs solutions.
-* Vendre ses objets avec les PNJ au spawn du serveur
-* Échanger ses objets avec d’autres joueurs</p>
+</div>
+<div class="section" id="creer-une-nation">
+<h2>Créer une nation<a class="headerlink" href="#creer-une-nation" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Une fois que vous avez trouvé l’endroit idéal pour bâtir votre nouvelle vie, utilisez <code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">create</span> <span class="pre">&lt;nom</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">nation&gt;</span></code>
+pour créer une nouvelle nation. Cela créera votre nation, réclamant le seul bloc où vous êtes debout et le spawn sera là par défaut. Il vous en coûtera 50000 pigz. (Pour voir les coût <code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">cost</span></code>).</p>
+<hr class="docutils" />
+<p>⚠ Vous devez immédiatement mettre de l’argent dans la banque de votre nation (en utilisant <code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">deposit</span> <span class="pre">&lt;montant&gt;</span></code>) afin qu’elle ne soit pas perdue lors de la prochaine collecte de taxe journalière.</p>
+<hr class="docutils" />
+<p>Vous pouvez ensuite revendiquer une zone pour votre nation en utilisant une hache d’or. Faites un clic droit pour spécifier un coin, et un clic gauche pour le coin opposé, puis utilisez <code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">claim</span></code> pour le revendiquer au nom de votre nation. (N.B. Votre spawn doit se trouver dans cette première zone) Les nations n’ont pas besoin d’être carrées ou rectangulaires, vous pouvez ajouter des sections de terres à votre guise. Vous commencez avec 3072 blocs par habitant, après avoir utilisé ces blocs, vous pourrez en acheter plus éventuellement, à ce moment vous utiliserez <code class="docutils literal notranslate"><span class="pre">/buyextra</span> <span class="pre">&lt;montant&gt;</span></code> pour le faire, vous ne pourrez acheter qu’un certain nombre de blocs (le montant sera déterminé par votre administrateur, indiqué bientôt sur le <code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">cost</span></code>)</p>
+</div>
+<div class="section" id="liste-des-commandes-nations">
+<h2>Liste des commandes Nations<a class="headerlink" href="#liste-des-commandes-nations" title="Lien permanent vers ce titre">¶</a></h2>
+<p><em>Attention!  L’annotation «&nbsp;(president) ou (staff)&nbsp;» à la fin d’une commande signifie qu’elle ne peut être exécutée que par le président ou un ministre de la nation donnée.</em></p>
+<div class="section" id="nation">
+<h3>/Nation<a class="headerlink" href="#nation" title="Lien permanent vers ce titre">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="72%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">info</span> <span class="pre">[nation]</span></code></td>
+<td><div class="first last line-block">
+<div class="line">Vous donne des informations sur la nation donnée ou sur votre nation si aucune n’a été spécifié.</div>
+<div class="line">Dans le chat, vous pourrez modifier en cliquant sur les permissions et les flags.</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">cost</span></code></td>
+<td>Vous donne des informations sur les coûts des nations, des Avant-postes, des taxes, etc.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">here</span></code></td>
+<td>Vous donne des informations sur la nation sur laquelle vous vous trouvez, le cas échéant.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">list</span></code></td>
+<td>Vous donne la liste de toutes les nations.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">create</span> <span class="pre">&lt;nom&gt;</span></code></td>
+<td>Créez une nation avec le nom donné. Le nom doit être alphanumérique et comporter entre 1 et 16 caractères.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">deposit</span> <span class="pre">&lt;montant&gt;</span></code></td>
+<td>Dépôt d’un montant d’argent spécifié dans la banque de votre pays.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">withdraw</span> <span class="pre">&lt;montant&gt;</span></code></td>
+<td>Retirer le montant spécifié de la banque de votre pays. (staff)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">claim</span></code></td>
+<td><div class="first last line-block">
+<div class="line">Faites votre pays revendiquer la zone que vous avez sélectionnée avec une hache d’or.</div>
+<div class="line">La zone doit être adjacente à votre nation. (staff)</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">claim</span> <span class="pre">outpost</span></code></td>
+<td><div class="first last line-block">
+<div class="line">Agrandissez votre nation réclamer le bloc sous votre position comme avant-poste.</div>
+<div class="line">Vous serez en mesure de réclamer normalement des blocs adjacents à celui-ci.</div>
+<div class="line">Coûte plus qu’une réclamation normale. (staff)</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">unclaim</span></code></td>
+<td><div class="first last line-block">
+<div class="line">Faites en sorte que votre nation ne revendique plus la zone que vous avez sélectionnée avec une hache en or.</div>
+<div class="line">La zone doit se croiser avec la région de votre nation. (staff)</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">invite</span> <span class="pre">&lt;nom</span> <span class="pre">du</span> <span class="pre">joueur&gt;</span></code></td>
+<td>Demander à un joueur (il doit être connecté) de se joindre à votre nation. (staff)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">join</span> <span class="pre">&lt;nation&gt;</span></code></td>
+<td>Demandez au personnel de la nation indiqué de vous ajouter  dans cet nation.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">kick</span> <span class="pre">&lt;nom</span> <span class="pre">du</span> <span class="pre">joueur&gt;</span></code></td>
+<td>Forcez le joueur précisé à quitter la nation. (staff)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">leave</span></code></td>
+<td>Quittez votre nation. Si vous êtes président, utilisez /n resign en premier.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">resign</span> <span class="pre">&lt;nom</span> <span class="pre">du</span> <span class="pre">joueur</span> <span class="pre">successeur&gt;</span></code></td>
+<td>Définir le joueur donné en tant que nouveau président de la nation. (president)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">spawn</span> <span class="pre">&lt;nom</span> <span class="pre">du</span> <span class="pre">spawn&gt;</span></code></td>
+<td>Vous téléporte au spawn précisé.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">setspawn</span> <span class="pre">&lt;nom</span> <span class="pre">du</span> <span class="pre">spawn&gt;</span></code></td>
+<td>Créer un nouveau spawn sous vos pieds avec le nom défini. (staff)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">delspawn</span> <span class="pre">&lt;nom</span> <span class="pre">du</span> <span class="pre">spawn&gt;</span></code></td>
+<td>Supprimer le spawn spécifié. (staff)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">buyextra</span> <span class="pre">&lt;montant&gt;</span></code></td>
+<td><div class="first last line-block">
+<div class="line">Faire en sorte que votre nation achète un nombre donné de blocs supplémentaires.</div>
+<div class="line">Ces blocs supplémentaires augmentent la limite de claim de votre pays.</div>
+<div class="line">Votre nation devra payer les frais de claim habituel pour intégrer ces blocs à votre territoire. (staff)</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">minister</span> <span class="pre">add</span> <span class="pre">&lt;nom</span> <span class="pre">du</span> <span class="pre">joueur&gt;</span></code></td>
+<td>Ajouter le joueur aux ministres de la nation. (president)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">minister</span> <span class="pre">remove</span> <span class="pre">&lt;nom</span> <span class="pre">du</span> <span class="pre">joueur&gt;</span></code></td>
+<td>Retirer le joueur des ministres de la nation. (president)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">minister</span> <span class="pre">perm</span> <span class="pre">outsider</span> <span class="pre">build</span> <span class="pre">&lt;true|false&gt;</span></code></td>
+<td>Autoriser / Interdire aux personnes qui ne sont pas de votre pays de placer ou de casser des blocs dans votre nation. (staff)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">minister</span> <span class="pre">perm</span> <span class="pre">outsider</span> <span class="pre">interact</span> <span class="pre">&lt;true|false&gt;</span></code></td>
+<td><div class="first last line-block">
+<div class="line">Autoriser / Interdire les personnes qui ne sont pas de votre pays d’ouvrir les coffres,
+| les portes d’interrupteurs, les boutons poussoirs, etc. dans votre pays. (staff)</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">minister</span> <span class="pre">perm</span> <span class="pre">citizen</span> <span class="pre">build</span> <span class="pre">&lt;true|false&gt;</span></code></td>
+<td><div class="first last line-block">
+<div class="line">Permettre / Interdire aux citoyens de votre nation de placer ou de casser des blocs dans votre nation. (staff)</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">minister</span> <span class="pre">perm</span> <span class="pre">citizen</span> <span class="pre">interact</span> <span class="pre">&lt;true|false&gt;</span></code></td>
+<td><div class="first last line-block">
+<div class="line">Permettre / Interdire aux citoyens de votre nation d’ouvrir les coffres, les portes d’interrupteurs,</div>
+<div class="line">les boutons poussoirs, etc. dans votre pays. (staff)</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">minister</span> <span class="pre">perm</span> <span class="pre">citizen</span> <span class="pre">flag</span> <span class="pre">pvp</span> <span class="pre">&lt;true|false&gt;</span></code></td>
+<td>Activer / Désactiver le pvp dans la région de votre pays. (staff)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">minister</span> <span class="pre">perm</span> <span class="pre">citizen</span> <span class="pre">flag</span> <span class="pre">fire</span> <span class="pre">&lt;true|false&gt;</span></code></td>
+<td>Activer / Désactiver la propagation du feu dans la région de votre pays. (staff)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">minister</span> <span class="pre">perm</span> <span class="pre">citizen</span> <span class="pre">flag</span> <span class="pre">mobs</span> <span class="pre">&lt;true|false&gt;</span></code></td>
+<td>Activer / Désactiver le spawn des monstres dans la région de votre nation. (staff)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">minister</span> <span class="pre">perm</span> <span class="pre">citizen</span> <span class="pre">flag</span> <span class="pre">explosions</span> <span class="pre">&lt;true|false&gt;</span></code></td>
+<td>Activer / Désactiver les explosions dans la région de votre pays. (staff)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">minister</span> <span class="pre">perm</span> <span class="pre">citizen</span> <span class="pre">flag</span> <span class="pre">open</span> <span class="pre">&lt;true|false&gt;</span></code></td>
+<td>Activer / Désactiver les personnes pouvant rejoindre librement votre nation. (staff)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">/n</span> <span class="pre">minister</span> <span class="pre">perm</span> <span class="pre">citizen</span> <span class="pre">flag</span> <span class="pre">public</span> <span class="pre">&lt;true|false&gt;</span></code></td>
+<td>Activer / Désactiver l’achat de zones pour les personnes qui ne sont pas de votre pays. (staff)</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 

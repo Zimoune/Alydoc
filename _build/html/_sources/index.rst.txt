@@ -10,6 +10,8 @@ Bienvenue sur le guide d'Alykraft
    :maxdepth: 2
    :caption: Sommaire:
 
+   chat
+   move
    win_money
    town
 .. Indices and tables
