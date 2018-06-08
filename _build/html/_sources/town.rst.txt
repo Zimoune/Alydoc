@@ -35,18 +35,15 @@ Créer une nation
 Une fois que vous avez trouvé l'endroit idéal pour bâtir votre nouvelle vie, utilisez ``/n create <nom de la nation>``
 pour créer une nouvelle nation. Cela créera votre nation, réclamant le seul bloc où vous êtes debout et le spawn sera là par défaut. Il vous en coûtera 50000 pigz. (Pour voir les coût ``/n cost``).
 
------
-
-⚠ Vous devez immédiatement mettre de l'argent dans la banque de votre nation (en utilisant ``/n deposit <montant>``) afin qu'elle ne soit pas perdue lors de la prochaine collecte de taxe journalière.
-
-----
+.. warning:: ⚠ Vous devez immédiatement mettre de l'argent dans la banque de votre nation (en utilisant ``/n deposit <montant>``) 
+             afin qu'elle ne soit pas perdue lors de la prochaine collecte de taxe journalière.
 
 Vous pouvez ensuite revendiquer une zone pour votre nation en utilisant une hache d'or. Faites un clic droit pour spécifier un coin, et un clic gauche pour le coin opposé, puis utilisez ``/n claim`` pour le revendiquer au nom de votre nation. (N.B. Votre spawn doit se trouver dans cette première zone) Les nations n'ont pas besoin d'être carrées ou rectangulaires, vous pouvez ajouter des sections de terres à votre guise. Vous commencez avec 3072 blocs par habitant, après avoir utilisé ces blocs, vous pourrez en acheter plus éventuellement, à ce moment vous utiliserez ``/buyextra <montant>`` pour le faire, vous ne pourrez acheter qu’un certain nombre de blocs (le montant sera déterminé par votre administrateur, indiqué bientôt sur le ``/n cost``)
 
 Liste des commandes Nations
 ---------------------------
-
-*Attention!  L'annotation "(president) ou (staff)" à la fin d’une commande signifie qu'elle ne peut être exécutée que par le président ou un ministre de la nation donnée.*
+.. note:: L'annotation "(president) ou (staff)" à la fin d’une commande signifie qu'elle ne peut être exécutée 
+          que par le président ou un ministre de la nation donnée.
 
 /Nation
 .......
