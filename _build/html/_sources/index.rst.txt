@@ -10,6 +10,7 @@ Bienvenue sur le guide d'Alykraft
    :maxdepth: 2
    :caption: Sommaire:
 
+   presentation
    chat
    move
    win_money
