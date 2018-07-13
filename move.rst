@@ -4,6 +4,11 @@ Déplacements
 
 Dans Alykraft, les téléportations sont possibles vers le spawn, vos villes et les joueurs.
 
+*************************
+Aller au spawn du serveur
+*************************
+Pour se rendre au spawn, il suffit de faire la commande : ``/spawn``
+
 *****************************
 Téléportation vers un joueur
 *****************************
@@ -17,8 +22,7 @@ Téléporter un joueur sur soi
 
 Pour téléporter un joueur sur soi, vous devez executer la commande  : ``/tpahere <pseudo du joueur>``
 
-*******************
-Les messages privés
-*******************
-Vous pouvez bien évidemment envoyer des messages privés aux autres joueurs.
-Pour cela, vous devez executer la commande suivante : ``/msg <pseudo du destinataire> <votre message>``
+**********************
+Téléportation alétoire
+**********************
+Pour cela, vous devez executer la commande suivante : ``/rtp``
