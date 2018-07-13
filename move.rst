@@ -15,7 +15,7 @@ Le joueur destinaire recevra une notification et peut accepter ou refuser votre 
 Téléporter un joueur sur soi
 ****************************
 
-Pour rejoindre ce canal : ``/l``
+Pour téléporter un joueur sur soi, vous devez executer la commande  : ``/tpahere <pseudo du joueur>``
 
 *******************
 Les messages privés
