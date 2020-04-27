@@ -22,6 +22,7 @@ Pour rejoindre ce canal : ``/l``
 Le chat des villes et nations
 *****************************
 Pour parler avec les personnes uniquement de votre *ville* il suffit de faire la commande ``/tc <votre message>``
+
 Pour parler avec les personnes uniquement de votre *nation* il suffit de faire la commande ``/nc <votre message>``
 
 Si tu souhaites rester dans un canal utilise la commande sans le message.
@@ -35,5 +36,7 @@ Pour cela, vous devez executer la commande suivante : ``/msg <pseudo du destinat
 Pour répondre au dernier message reçu, vous pouvez faire la commande ``/r <votre message``
 
 Il est possible de répondre parler avec une personne dans taper en continue les commandes précedentes.
+
 Pour cela vous devez commencer votre message par le tag @pseudo ``@Zimoune Bonjour, tu vas bien ?``
-Pour quitter se mode et retourner dans votre canal principal, vous devez taper ``exit``
+
+Pour quitter ce mode et retourner dans votre canal principal, vous devez taper ``exit``
