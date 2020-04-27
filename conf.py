@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Alydoc'
-copyright = '2018, Zimoune'
+copyright = '2020, Zimoune'
 author = 'Zimoune'
 
 # The short X.Y version
