@@ -66,7 +66,7 @@ Vous pouvez obtenir et gérer vos métiers depuis le NPC présent au spawn.
 
 Ces actions sont égalements possibles via des commandes.
 
-Pour accepter à la liste des commandes et sélectionner un job il faut :
+Pour accéder à la liste des commandes et sélectionner un job il faut :
 
 - Taper ``/jobs`` pour avoir la liste des commandes disponibles.
 - Taper ``/jobs browse`` pour voir la liste des métiers disponibles ainsi que l'argent gagné en fonction du métier.
@@ -76,3 +76,5 @@ Pour accepter à la liste des commandes et sélectionner un job il faut :
 Il est également possible de quitter l'ensemble de ses métiers: ``/jobs leaveall``
 
 Vous pouvez voir l'avancée de vos métiers en tapant la commande ``/jobs stats <Nom du joueur>``
+
+.. warning:: ⚠ Quitter un métier vous fera perdre votre progression dans celui-ci.
