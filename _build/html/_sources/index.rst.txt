@@ -13,7 +13,7 @@ Bienvenue sur le guide d'Alykraft
    presentation
    chat
    move
-   win_money
+   shops_jobs
    town
 .. Indices and tables
    ==================

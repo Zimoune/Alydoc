@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
-    <link rel="prev" title="La monnaie" href="win_money.html" /> 
+    <link rel="prev" title="Shops et métiers" href="shops_jobs.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -85,7 +85,7 @@
 <li class="toctree-l1"><a class="reference internal" href="presentation.html">Présentation du serveur</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chat.html">Le chat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="move.html">Déplacements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="win_money.html">La monnaie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shops_jobs.html">Shops et métiers</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Les villes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#les-parcelles">Les parcelles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#commandes-habitants">Commandes habitants</a></li>
@@ -164,7 +164,7 @@ Au plus votre communauté est grande, au plus vos richesses s’accumulent et vo
 évolues.</p>
 <p>Chaque ville a un maire. Il peut définir des assistants pour l’aider à gérer leurs habitants respectifs.
 Les joueurs peuvent également acheter des terrains de la ville, ainsi que payer une taxe journalière facultative fixée par le maire.
-Le joueur peut permettre à ses amis de l’extérieur de construire sur son terrain même si les habitants de sa propre ville ne peuvent pas construire dessus.</p>
+Le joueur peut permettre à ses amis extérieur à la ville de construire sur son terrain même si les habitants de sa propre ville ne peuvent pas construire dessus.</p>
 <div class="section" id="les-parcelles">
 <h2>Les parcelles<a class="headerlink" href="#les-parcelles" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Une ville est composée de parcelles (plots). Ces plots permettent de délimiter votre territoire.
@@ -172,13 +172,14 @@ Un plot est de dimension 16x16.</p>
 <p>Chaque ville possède un nombre maximum de plots, montant qui relatif au nombre de joueurs résidant dans la ville.
 Les habitants n’ont aucune limite sur le nombre de plots qu’ils peuvent possèder.</p>
 <p>Une parcelle peut être de plusieurs types (Arène, shop, Banque, Ferme, …)</p>
+<p>Pour qu’un habitant puisse être propriétaire d’une parcelle, le maire ou ses assitants doivent avoir mis celle-ci en vente.</p>
 </div>
 <div class="section" id="commandes-habitants">
 <h2>Commandes habitants<a class="headerlink" href="#commandes-habitants" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 27%" />
-<col style="width: 73%" />
+<col style="width: 24%" />
+<col style="width: 76%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Commande</p></th>
@@ -198,7 +199,10 @@ Les habitants n’ont aucune limite sur le nombre de plots qu’ils peuvent poss
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">/t</span> <span class="pre">leave</span></code></p></td>
 <td><p>Quitter sa ville</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">/t</span> <span class="pre">?</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">/t</span> <span class="pre">reslist</span></code></p></td>
+<td><p>Voir la liste complète des habitants d’une ville</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">/t</span> <span class="pre">?</span></code></p></td>
 <td><p>Voir la liste des commandes disponibles</p></td>
 </tr>
 </tbody>
@@ -207,7 +211,7 @@ Les habitants n’ont aucune limite sur le nombre de plots qu’ils peuvent poss
 <div class="section" id="creer-une-ville">
 <h2>Créer une ville<a class="headerlink" href="#creer-une-ville" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Pour créer une ville, vous devez avoir terminé la quête « Devenir Maire » disponible au spawn.
-Une ville doit impérativement se retrouver à moins de 800 blocs d’une autre pour être créee.
+Une ville doit impérativement se retrouver à plus de 800 blocs d’une autre pour être créee.
 Le prix d’une ville est de 150 000 pigz.</p>
 <p>Après avoir trouvé l’endroit idéal pour bâtir votre nouvelle vie, utilisez <code class="docutils literal notranslate"><span class="pre">/t</span> <span class="pre">create</span> <span class="pre">&lt;nom</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">ville&gt;</span></code> pour créer une nouvelle ville.
 Le bloc où vous executerez la commande sera le plot principale de votre ville.</p>
@@ -229,7 +233,7 @@ afin qu’elle ne soit pas perdue lors de la prochaine collecte de taxe journali
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="win_money.html" class="btn btn-neutral float-left" title="La monnaie" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="shops_jobs.html" class="btn btn-neutral float-left" title="Shops et métiers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

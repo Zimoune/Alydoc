@@ -8,7 +8,7 @@ Au plus votre communauté est grande, au plus vos richesses s'accumulent et vos 
 
 Chaque ville a un maire. Il peut définir des assistants pour l'aider à gérer leurs habitants respectifs. 
 Les joueurs peuvent également acheter des terrains de la ville, ainsi que payer une taxe journalière facultative fixée par le maire. 
-Le joueur peut permettre à ses amis de l'extérieur de construire sur son terrain même si les habitants de sa propre ville ne peuvent pas construire dessus.
+Le joueur peut permettre à ses amis extérieur à la ville de construire sur son terrain même si les habitants de sa propre ville ne peuvent pas construire dessus.
 
 
 Les parcelles
@@ -21,28 +21,32 @@ Les habitants n'ont aucune limite sur le nombre de plots qu'ils peuvent possède
 
 Une parcelle peut être de plusieurs types (Arène, shop, Banque, Ferme, ...)
 
+Pour qu'un habitant puisse être propriétaire d'une parcelle, le maire ou ses assitants doivent avoir mis celle-ci en vente.
+
 
 Commandes habitants
 -------------------
 
-+-----------------+---------------------------------------------+
-| Commande        | Description                                 |
-+=================+=============================================+
-| ``/t list``     | Voir la liste des villes                    |
-+-----------------+---------------------------------------------+
-| ``/t``          | Voir les informations de la ville           |
-+-----------------+---------------------------------------------+
-| ``/t deposit``  | Déposer de l'argent dans la banque de ville |
-+-----------------+---------------------------------------------+
-| ``/t leave``    | Quitter sa ville                            |
-+-----------------+---------------------------------------------+
-| ``/t ?``        | Voir la liste des commandes disponibles     |
-+-----------------+---------------------------------------------+
++----------------+--------------------------------------------------+
+| Commande       | Description                                      |
++================+==================================================+
+| ``/t list``    | Voir la liste des villes                         |
++----------------+--------------------------------------------------+
+| ``/t``         | Voir les informations de la ville                |
++----------------+--------------------------------------------------+
+| ``/t deposit`` | Déposer de l'argent dans la banque de ville      |
++----------------+--------------------------------------------------+
+| ``/t leave``   | Quitter sa ville                                 |
++----------------+--------------------------------------------------+
+| ``/t reslist`` | Voir la liste complète des habitants d'une ville |
++----------------+--------------------------------------------------+
+| ``/t ?``       | Voir la liste des commandes disponibles          |
++----------------+--------------------------------------------------+
 
 Créer une ville
 ----------------
 Pour créer une ville, vous devez avoir terminé la quête "Devenir Maire" disponible au spawn.
-Une ville doit impérativement se retrouver à moins de 800 blocs d'une autre pour être créee.
+Une ville doit impérativement se retrouver à plus de 800 blocs d'une autre pour être créee.
 Le prix d'une ville est de 150 000 pigz.
 
 Après avoir trouvé l'endroit idéal pour bâtir votre nouvelle vie, utilisez ``/t create <nom de la ville>`` pour créer une nouvelle ville. 
